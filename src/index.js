@@ -6,7 +6,7 @@ app.use(express.urlencoded({
   extended: false
 }))
 
-require("./controllers/authController")(app)
-require("./controllers/projectController")(app)
+require("./app/controllers/index.js")(app)
+
 
 app.listen(8000, ()=>{console.log("Server is working!")})
