@@ -7,5 +7,6 @@ app.use(express.urlencoded({
 }))
 
 require("./controllers/authController")(app)
+require("./controllers/projectController")(app)
 
 app.listen(8000, ()=>{console.log("Server is working!")})
